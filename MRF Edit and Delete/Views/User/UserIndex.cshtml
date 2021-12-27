@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "UserIndex";
+    //Layout = null;
+}
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+</HEAD>
+<body style="background-color:aliceblue">
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                
+                <th>
+                    Userid
+                </th>
+                <th>
+                    PositionName
+                </th>
+                <th>
+                    Vacancy_For
+                </th>
+                <th>
+                    TerritoryHQ
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+
+
+    <input type="hidden" id="txtUserid" value="@Session["Userid"]" />
+
+
+</body>
+</HTML>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/User/User.js"></script>
+<script type="text/javascript">
+    
+    var Userid = "@Session["Userid"]";
+
+</script>

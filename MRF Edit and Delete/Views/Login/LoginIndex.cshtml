@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+   <script src="~/Scripts/Login/LoginIndex.js"></script>
+</head>
+<body>
+    <div class="input-group">
+        <label>Userid</label>
+        <input type="text" class="form-control" placeholder="Userid" id="Userid"  aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" id="Password"     aria-describedby="basic-addon1">
+    </div>
+    <br>
+    <div>
+        <button type="submit" class="btn btn-primary" onclick="LoginReq()">Login</button>
+    </div>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
