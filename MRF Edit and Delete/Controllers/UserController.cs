@@ -13,9 +13,7 @@ namespace MRF_Edit_and_Delete.Controllers
         UserDatalayer UserDB = new UserDatalayer();
 
         public ActionResult UserIndex()                       
-        {
-            //ggggggggsjdkljfjsdhjhkhkjhjkh
-            
+        { 
             return View();
 
         }
@@ -32,7 +30,7 @@ namespace MRF_Edit_and_Delete.Controllers
         public JsonResult Update(MRFModel user)
         {
             return Json(UserDB.Update(user), JsonRequestBehavior.AllowGet);
-        }
+        } 
         public JsonResult Delete(int ID)
         {
             return Json(UserDB.Delete(ID), JsonRequestBehavior.AllowGet);

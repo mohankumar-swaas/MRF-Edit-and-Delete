@@ -13,6 +13,7 @@ namespace MRF_Edit_and_Delete.Controllers
         MRFDatalayer MRFDB = new MRFDatalayer();
         public ActionResult MRFIndex()
         {
+            
             return View();
         }
 

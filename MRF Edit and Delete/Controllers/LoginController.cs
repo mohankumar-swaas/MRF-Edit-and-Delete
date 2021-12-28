@@ -16,6 +16,8 @@ namespace MRF_Edit_and_Delete.Controllers
         {
             return View();
         }
+
+        //login 1
         public JsonResult Loginvalidation(LoginModel Log)
         {
             Session["Userid"] = Log.Userid;
